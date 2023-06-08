@@ -1,6 +1,6 @@
 function add(number1, number2) {
   const addAns = number1 + number2;
-  return number1.toString() + number2.toString() + addAns.toString() + ","
+  return number1.toString() + "+" + number2.toString() + "=" + addAns.toString() + ",";
 }
 
 const number1 = parseInt(prompt("Enter a number for maths:"));
@@ -10,17 +10,17 @@ window.alert(add(number1, number2) + " " + sub(number1, number2) + " " + mult(nu
 
 function sub(number1, number2) {
   const subAns = number1 - number2;
-  return "The subtraction of your numbers equals" + " " + subAns + ",";
+  return number1.toString() + "-" + number2.toString() + "=" + subAns + ",";
 }
 
 
 function mult(number1, number2) {
   const multAns = number1 * number2;
-  return "The multiplication of your numbers equals" + " " + multAns + ",";
+  return number1.toString() + "*" + number2.toString() + "=" + multAns.toString() + ",";
 }
 
 
 function div(number1, number2) {
   const divAns = number1 / number2;
-  return "The division of your numbers equals" + " " + divAns + ".";
+  return "and" + number1.toString() + "/" + number2.toString() + "=" + divAns.toString() + ".";
 } 
